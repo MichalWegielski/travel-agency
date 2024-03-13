@@ -1,0 +1,94 @@
+@import url('../fonts/fonts.css');
+
+.home {
+    font-family: 'roboto';
+    box-shadow: 0px 0px 10px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-image: url('../images/zdjecie1.jpg');
+    background-position: left;
+    animation-name: changeBackground;
+    animation-duration: 70s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.home h1 {
+    padding: 20px 30px;
+    margin-right: auto;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: #FBFBFB;
+    background-color: rgba(0, 0, 0, 0.264);
+    letter-spacing: 2px;
+}
+
+.show-offerts {
+    position: relative;
+    width: 140px;
+    height: 70px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: solid 0px transparent;
+    background-color: #FFC400;
+    opacity: 0.95;
+    backdrop-filter: blur(10px);
+    color: #FBFBFB;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none; 
+    overflow: hidden;
+}
+
+.show-offerts::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #00E5FF;
+    border-radius: 20px;
+    transition: width 0.3s ease, height 0.3s ease; 
+    z-index: -1; 
+}
+
+.show-offerts:hover::before {
+    width: 100%; 
+    height: 100%; 
+}
+
+.show-offerts:hover {
+    opacity: 1;
+    transition: 200ms ease;
+}
+
+.timebox {
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.264);
+    color: #FBFBFB;
+    letter-spacing: 1px;
+}
+
+@keyframes changeBackground {
+    0% { background-image: url('../images/zdjecie1.jpg'); background-position: left; }
+    20% { background-image: url('../images/zdjecie2.jpg'); background-position: left; }
+    40% { background-image: url('../images/zdjecie3.jpg'); background-position: center; }
+    60% { background-image: url('../images/zdjecie4.jpg'); background-position: bottom; }
+    80% { background-image: url('../images/zdjecie5.jpg'); background-position: right; }
+    100% { background-image: url('../images/zdjecie1.jpg'); background-position: left; }
+}
