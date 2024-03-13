@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: whitesmoke;
 }
 
 .main-container {
@@ -13,7 +14,7 @@ body {
 }
 
 nav, footer {
-    width: 100%;
+    width: 95%;
 }
 
 .container {
@@ -21,6 +22,7 @@ nav, footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 .content {
