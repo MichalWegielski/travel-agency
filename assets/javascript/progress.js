@@ -28,7 +28,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     const progressInterval = setInterval(updateProgress, duration / (targetPercent / increment));
     const progressInterval2 = setInterval(updateProgress2, duration / (targetJourneys / increment));
-
-    updateProgress();
-    updateProgress2();
 });
