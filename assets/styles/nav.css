@@ -1,0 +1,63 @@
+@import url('../fonts/fonts.css');
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fbfbfbb9;
+    font-family: 'roboto';
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px grey;
+}
+
+.nav-items {
+    padding-right: 5%;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 8%;
+    padding-right: 2%;
+    font-family: 'luckiest guy';
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.logo .first-logo-node {
+    color: #00E5FF;
+    margin-left: 3px;
+}
+
+.logo .second-logo-node {
+    color: #FFC400;
+}
+
+nav .nav-items .nav-item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+nav .nav-items .nav-item .nav-link {
+    color: #FFC400;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+}
+
+nav .nav-items .nav-item .nav-link:hover {
+   border: 1px solid #DCDCDC;
+   border-radius: 20px;
+   transition: 200ms;
+}
