@@ -9,18 +9,81 @@
     margin-bottom: 40px;
 }
 
-.slider {
+.image-slider {
+    height: 500px;
+    width: 96%;
     position: relative;
-    width: 100%;
-    margin: auto;
     overflow: hidden;
+    background-image: url('../images/zdjecie1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 20px;
 }
 
-.slider img {
-    width: 100%;
-    display: none;
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    width: 30%;
+    text-align: center;
+    padding: 4em 1em 2em 1em;
 }
 
-img .displaySlide {
-    display: block;
+.caption h1 {
+    color: #FBFBFB;
+    backdrop-filter: blur(10px);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.caption p {
+    color: #FBFBFB;
+    backdrop-filter: blur(10px);
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.arrow-left, .arrow-right {
+    background-color: #FBFBFB;
+    position: absolute;
+    top: 45%;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background-color: #DCDCDC;
+}
+
+.arrow-left {
+    left: 1em;
+}
+
+.arrow-right {
+    right: 1em;
+}
+
+.image-fade {
+    animation: imgFade 0.5s ease-in-out;
+}
+
+@keyframes imgFade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
