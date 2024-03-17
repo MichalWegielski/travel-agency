@@ -24,6 +24,10 @@
     border-radius: 20px;
 }
 
+.image-slider:hover {
+    cursor: pointer;
+}
+
 .caption {
     position: absolute;
     bottom: 0;
@@ -77,6 +81,14 @@
 
 .image-fade {
     animation: imgFade 0.5s ease-in-out;
+}
+
+.helper {
+    display: none;
+}
+
+.tooltip {
+    display: block;
 }
 
 @keyframes imgFade {

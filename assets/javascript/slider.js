@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const arrRight = document.querySelector('.arrow-right');
     const heading = document.querySelector('.caption h1');
     const description = document.querySelector('.caption p');
+    const tooltip = document.querySelector('.helper');
 
     const images = ["zdjecie1.jpg", "zdjecie2.jpg", "zdjecie3.jpg", "zdjecie4.jpg", "zdjecie5.jpg"];
 
@@ -43,5 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         slide(id);
+    });
+
+    slider.addEventListener('mouseenter', () => {
+        tooltip.classList.add('tooltip');
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        tooltip.classList.remove('tooltip');
     });
 });
