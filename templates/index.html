@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/styles/aboutus.css">
     <link rel="stylesheet" href="../assets/styles/offers.css">
     <link rel="stylesheet" href="../assets/styles/lastminute.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
     <script src="../assets/javascript/date.js"></script>
     <script src="../assets/javascript/timecounter.js"></script>
     <script src="../assets/javascript/progress.js"></script>
@@ -156,9 +157,26 @@
                 </div>
             </section>
             <section class="content opinions">
-                
+                <!-- OPINIE -->
             </section>
-            <footer class="content contact"></footer>
+            <footer>
+                <form class="contact" method="POST">         
+                    <h1>Wyślij nam wiadomość:</h1>
+                    <label for="name1">Podaj imię:</label>
+                    <input type="text" id="name1" name="name1" required>
+
+                    <label for="name2">Podaj nazwisko:</label>
+                    <input type="text" id="name2" name="name2" required>
+
+                    <label for="email">Adres email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="message" rows="10" cols="40" required></textarea>
+
+                    <button class="submit" type="submit">Wyślij</button>
+                </form>
+            </footer>
         </div>
     </div>
   </body>
