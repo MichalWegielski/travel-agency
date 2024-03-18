@@ -1,0 +1,80 @@
+.lastminute h1 {
+    padding: 20px 30px;
+    margin-right: auto;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: #FBFBFB;
+    background-color: rgba(0, 0, 0, 0.264);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.lastminutePhoto {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.lastminuteOffert {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+    border: solid 2px #DCDCDC;
+}
+
+.accomodation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.accomodation img {
+    margin-right: 3px;
+}
+
+.foodOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.accomodation img {
+    margin-right: 3px;
+}
+
+.direction {
+    font-weight: bold;
+}
+
+.checkLastMinute {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: #0b9809;
+    border: transparent;
+    border-radius: 10px;
+    color: #FBFBFB;
+    font-weight: 500;
+}
+
+.checkLastMinute:hover {
+    background-color: #0b7509;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.lastminuteOfferts {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
