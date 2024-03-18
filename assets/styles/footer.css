@@ -11,9 +11,20 @@ footer {
     box-shadow: 0px 0px 10px grey;
 }
 
-footer h1 {
+.contact h1 {
+    background-color: rgba(0, 0, 0, 0.264);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
     font-weight: 500;
     letter-spacing: 1px;
+    color: #FBFBFB;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .contact {
@@ -33,8 +44,48 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
+}
+
+.submit {
+    width: 80%;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: transparent;
+    background-color: #0b9809;
+    color: #FBFBFB;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.submit:hover {
+    background-color: #0b7509;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+label {
+    margin-right: auto;
+}
+
+.left-footer {
+    border: solid 2px #DCDCDC;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.left-footer h1 {
+    background-color: rgba(0, 0, 0, 0.264);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #FBFBFB;
 }
