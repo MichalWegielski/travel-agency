@@ -1,7 +1,4 @@
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #fbfbfbb9;
     font-family: 'roboto';
     border-top-left-radius: 20px;
@@ -24,7 +21,7 @@ footer {
 .footer-grid {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    justify-content: center;
 }
 
 .contact {
@@ -76,6 +73,7 @@ label {
     border: solid 2px #DCDCDC;
     padding: 10px 20px;
     margin-top: 30px;
+    margin-right: 100px;
     margin-bottom: 30px;
     border-radius: 20px;
 }
@@ -88,4 +86,36 @@ label {
     font-weight: 500;
     letter-spacing: 1px;
     color: #FBFBFB;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-item {
+    background-color: #FBFBFB;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: black;
+}
+
+.social-item:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #DCDCDC;
+}
+
+hr {
+    border-top: 2px solid #DCDCDC;
 }
