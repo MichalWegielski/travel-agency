@@ -25,24 +25,33 @@
                 <span class="first-logo-node">Dream</span><span class="second-logo-node">tour</span>
             </div>
             <ul class="nav-items">
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Oferty</a></li>
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Last Minute</a></li>
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Opinie</a></li>
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Promocje</a></li>
-                <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Kontakt</a></li>
+                <li class="nav-item" data-box="home">
+                    <a href="javascript:void(0)" class="nav-link" data-box="home">Home</a>
+                </li>
+                <li class="nav-item" data-box="offers">
+                    <a href="javascript:void(0)" class="nav-link" data-box="offers">Oferty</a>
+                </li>
+                <li class="nav-item" data-box="lastminute">
+                    <a href="javascript:void(0)" class="nav-link" data-box="lastminute">Last Minute</a>
+                </li>
+                <li class="nav-item" data-box="opinions">
+                    <a href="javascript:void(0)" class="nav-link" data-box="opinions">Opinie</a>
+                </li>
+                <li class="nav-item" data-box="contact">
+                    <a href="javascript:void(0)" class="nav-link" data-box="contact">Kontakt</a>
+                </li>
             </ul>
         </nav>
         <div class="container"></div>
-            <section class="content home">
+            <section class="content home navcontent" data-box="home">
                 <h1>Gotowy na wakacje życia?</h1>
-                <button class="show-offerts">Zobacz oferty</button>
+                <button class="show-offerts" data-box="offers">Zobacz oferty</button>
                 <div class="timebox">
                     <div class="current-date" id="current-date"></div>
                     <div class="timecounter" id="timecounter"></div>
                 </div>
             </section>
-            <section class="content aboutus">
+            <section class="content aboutus navcontent" data-box="home">
                 <h1>Kim jesteśmy?</h1>
                 <p>DreamTour to projekt internetowy na zaliczenie przedmiotu na studiach. Prezentuje on symulacje prostego serwisu turystycznego oferującego wycieczki.</p>
                 <div class="progress-bars">
@@ -56,7 +65,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content offerts">
+            <section class="content offerts navcontent" data-box="offers">
                 <div class="image-slider">
                     <span class="helper"><img width="50" height="50" src="https://img.icons8.com/color/96/nui2.png" alt="nui2"/>Kliknij aby dowiedzieć się więcej</span>
                     <div class="arrow-left">
@@ -71,7 +80,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content lastminute">
+            <section class="content lastminute navcontent" data-box="lastminute">
                 <h1>Ostatnie chwile</h1>
                 <div class="lastminuteOfferts">
                     <div class="lastminuteOffert">
@@ -157,10 +166,9 @@
                     </div>
                 </div>
             </section>
-            <section class="content opinions">
-                <!-- OPINIE -->
-            </section>
-            <footer>
+            <!-- <section class="content opinions" data-box="opinions">
+            </section> -->
+            <footer class="navcontent" data-box="contact">
                 <div class="footer-grid">
                     <form class="contact" method="POST">         
                         <h1>Wyślij nam wiadomość</h1>
@@ -207,6 +215,7 @@
                         </div>
                     </div>
                 </div>
+                <p>&copy; ConiCode - Michał Węgielski, Projekt</p>
             </footer>
         </div>
     </div>
