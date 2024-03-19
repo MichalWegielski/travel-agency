@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.nav-item');
     const cardItems = document.querySelectorAll('.navcontent');
     const navLinks = document.querySelectorAll('.nav-link');
+    const navLinksMobile = document.querySelectorAll('.nav-link-mobile');
+    const navMobile = document.querySelector('.mobile-nav');
 
     const setDefaultActiveTab = () => {
         navLinks.forEach(navLink => {
@@ -15,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     setDefaultActiveTab();
+
+    //FOR DESKTOP NAVBAR
 
     navItems.forEach(navItem => {
         navItem.addEventListener('click', () => {
@@ -31,6 +35,27 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.forEach(item => item.blur());
         });
     });
+
+    //FOR MOBILE NAVBAR
+
+    navLinksMobile.forEach(navLinkMobile => {
+        navLinkMobile.addEventListener('click', () => {
+            const navMobileDataBox = navLinkMobile.getAttribute('data-box');
+            cardItems.forEach(cardItem => {
+                const cardDataBox = cardItem.getAttribute('data-box');
+                if (navMobileDataBox === cardDataBox && navMobileDataBox === 'home') {    
+                    cardItem.scrollIntoView({behavior: 'smooth'});
+                    window.scrollBy(0, -9999);
+                    navMobile.classList.remove('is-active');
+                } else if (navMobileDataBox === cardDataBox) {
+                    cardItem.scrollIntoView({behavior: 'smooth'});
+                    navMobile.classList.remove('is-active');
+                }
+            });
+        });
+    });
+
+    //FOR DESKTOP NAVBAR COLOR AUTOMATION
 
     window.onscroll = () => {
         let isHome = false;
