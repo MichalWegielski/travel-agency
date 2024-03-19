@@ -11,7 +11,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px grey;
 }
 
@@ -47,7 +47,7 @@ nav .nav-items .nav-item {
     padding: 10px 10px;
 }
 
-nav .nav-items .nav-item .nav-link {
+.nav-link {
     color: #FFC400;
     text-decoration: none;
     font-weight: bold;
@@ -56,8 +56,14 @@ nav .nav-items .nav-item .nav-link {
     letter-spacing: 1px;
 }
 
-nav .nav-items .nav-item .nav-link:hover {
+.nav-link:hover {
    border: 1px solid #DCDCDC;
    border-radius: 20px;
    transition: 200ms;
+}
+
+.active {
+    border-radius: 20px;
+    background-color: #FFC400;
+    color: #FFFFFF;
 }
