@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/styles/aboutus.css">
     <link rel="stylesheet" href="../assets/styles/offers.css">
     <link rel="stylesheet" href="../assets/styles/lastminute.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
     <script src="../assets/javascript/date.js"></script>
     <script src="../assets/javascript/timecounter.js"></script>
     <script src="../assets/javascript/progress.js"></script>
@@ -156,9 +157,56 @@
                 </div>
             </section>
             <section class="content opinions">
-                
+                <!-- OPINIE -->
             </section>
-            <footer class="content contact"></footer>
+            <footer>
+                <div class="footer-grid">
+                    <form class="contact" method="POST">         
+                        <h1>Wyślij nam wiadomość:</h1>
+                        <label for="name1">Podaj imię:</label>
+                        <input type="text" id="name1" name="name1" required>
+
+                        <label for="name2">Podaj nazwisko:</label>
+                        <input type="text" id="name2" name="name2" required>
+
+                        <label for="email">Adres email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Wiadomość:</label>
+                        <textarea id="message" name="message" rows="10" cols="40" required></textarea>
+
+                        <button class="submit" type="submit">Wyślij</button>
+                    </form>
+                    <div class="left-footer">
+                        <h1>Znajdź nas na social mediach:</h1>
+                        <div class="socials">
+                            <a href="https://www.facebook.com/profile.php?id=100004955928795" target="_blank" class="social-item">
+                                <img width="96" height="96" src="https://img.icons8.com/color/96/facebook-new.png" alt="facebook-new"/>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/michalwegielski/" target="_blank" class="social-item">
+                                <img width="96" height="96" src="https://img.icons8.com/fluency/96/instagram-new.png" alt="instagram-new"/>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://github.com/MichalWegielski" target="_blank" class="social-item">
+                                <img width="100" height="100" src="https://img.icons8.com/plasticine/100/github.png" alt="github"/>
+                                <span>Github</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/micha%C5%82-w%C4%99gielski-4487252b8/" target="_blank" class="social-item">
+                                <img width="96" height="96" src="https://img.icons8.com/fluency/96/linkedin.png" alt="linkedin"/>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                        <hr/>
+                        <div class="cooperators">
+                            <p>Partnerzy: </p>
+                            <a href="https://github.com/coni-code" class="co-link" target="_blank">
+                                <img class="co-image" src="../assets/images/conicode.png" alt="cooperators"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
   </body>

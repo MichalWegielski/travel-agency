@@ -1,0 +1,133 @@
+footer {
+    background-color: #fbfbfbb9;
+    font-family: 'roboto';
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px grey;
+}
+
+.contact h1 {
+    background-color: rgba(0, 0, 0, 0.264);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #FBFBFB;
+    box-shadow: 0px 0px 10px rgb(28, 26, 26);
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: solid 2px #DCDCDC;
+    padding: 10px 20px;
+    margin: 30px 100px;
+    border-radius: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea:focus, input:focus{
+    outline: solid 1px #dddd;
+}
+
+.submit {
+    width: 80%;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: transparent;
+    background-color: #0b9809;
+    color: #FBFBFB;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.submit:hover {
+    background-color: #0b7509;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+label {
+    margin-right: auto;
+}
+
+.left-footer {
+    border: solid 2px #DCDCDC;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.left-footer h1 {
+    background-color: rgba(0, 0, 0, 0.264);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #FBFBFB;
+    box-shadow: 0px 0px 10px rgb(28, 26, 26);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-item {
+    background-color: #FBFBFB;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: black;
+}
+
+.social-item:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #DCDCDC;
+}
+
+hr {
+    border-top: 2px solid #DCDCDC;
+}
+
+.co-image {
+    height: 200px;
+    width: 220px;
+    border-radius: 20px;
+}
