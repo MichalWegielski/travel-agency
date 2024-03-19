@@ -10,6 +10,7 @@
     background-color: rgba(0, 0, 0, 0.264);
     letter-spacing: 2px;
     margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgb(28, 26, 26);
 }
 
 .lastminutePhoto {
