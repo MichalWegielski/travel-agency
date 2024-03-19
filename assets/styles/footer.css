@@ -47,6 +47,10 @@ textarea {
     box-sizing: border-box;
 }
 
+textarea:focus, input:focus{
+    outline: solid 1px #dddd;
+}
+
 .submit {
     width: 80%;
     height: 50px;
