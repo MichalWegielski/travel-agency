@@ -1,0 +1,97 @@
+.offers-details {
+    display: none;
+    position: fixed;
+    background-color: rgba(20, 17, 17, 0.558);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999; 
+    width: 100%;
+    height: 100%;
+    font-family: 'roboto';
+}
+
+.active-details {
+    display: block;
+}
+
+.modal-section {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 1rem;
+   background-color: #FBFBFB;
+   width: 80%;
+   height: 80%;
+   border-radius: 20px;
+   box-shadow: 0px 0px 15px #3f3e3e;
+   margin-top: 5%;
+   margin-left: 10%;
+}
+
+.tour-details {
+    margin-right: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.tour-photo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tour-informations {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tour-img {
+    width: 420px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.tour-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.booked-tour {
+    height: 60px;
+    width: 180px;
+    margin-top: auto;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    background-color: #0b9809;
+    color: #FBFBFB;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: transparent;
+    outline: none;
+}
+
+.booked-tour:hover {
+    background-color: #0b7509;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tour-single-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tour-single-info img {
+    margin-right: 5px;
+}

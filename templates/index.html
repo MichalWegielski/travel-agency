@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="../assets/styles/offers.css">
     <link rel="stylesheet" href="../assets/styles/lastminute.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
+    <link rel="stylesheet" href="../assets/styles/offersDetails.css">
     <script src="../assets/javascript/date.js"></script>
     <script src="../assets/javascript/timecounter.js"></script>
     <script src="../assets/javascript/progress.js"></script>
     <script src="../assets/javascript/slider.js"></script>
     <script src="../assets/javascript/navbar.js"></script>
     <script src="../assets/javascript/hamburger.js"></script>
+    <script src="../assets/javascript/openOffers.js"></script>
     <title>Dreamtour</title>
   </head>
   <body>
@@ -76,7 +78,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content offerts navcontent" data-box="offers">
+            <section id="offers" class="content offerts navcontent" data-box="offers">
                 <div class="image-slider">
                     <span class="helper"><img width="50" height="50" src="https://img.icons8.com/color/96/nui2.png" alt="nui2"/>Kliknij aby dowiedzieć się więcej</span>
                     <div class="arrow-left">
@@ -89,6 +91,41 @@
                         <h1>Turcja</h1>
                         <p>Piękne widoki</p>
                     </div>
+                </div>
+            </section>
+            <section id="offers-details" class="offers-details">
+                <div class="modal-section">
+                    <div class="tour-details">
+                        <h2 class="tour-header"></h2>
+                        <p class="tour-description"></p>
+                        <div class="tour-sections">
+                            <div class="tour-photo-section">
+                                <img class="tour-img" src="" alt="tourPhoto"/>
+                            </div>
+                            <div class="tour-informations">
+                                <span class="tour-single-info">
+                                    <img width="24" height="24" src="https://img.icons8.com/external-outline-andi-nur-abdillah/64/external-food-baby-outline-outline-andi-nur-abdillah.png" alt="external-food-baby-outline-outline-andi-nur-abdillah"/>
+                                      All-inclusive
+                                </span>
+                                <span class="tour-single-info">
+                                    <img width="24" height="24" src="https://img.icons8.com/ios/50/airport.png" alt="airport"/>
+                                      Lot samolotem - 8 dni
+                                </span>
+                                <span class="tour-single-info">
+                                    <img width="24" height="24" src="https://img.icons8.com/ios/50/food-and-wine.png" alt="food-and-wine"/>
+                                      Drink Bar
+                                </span>
+                                <span class="tour-single-info">
+                                    <img width="24" height="24" src="https://img.icons8.com/ios/50/lap-pool.png" alt="lap-pool"/>
+                                      Basen hotelowy
+                                </span>
+                                <p>
+                                    Po więcej informacji zapraszamy do rezerwacji i dokładnej rozmowy z naszym korspondentem
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="booked-tour">Zarezerwuj</button>
                 </div>
             </section>
             <section class="content lastminute navcontent" data-box="lastminute">
