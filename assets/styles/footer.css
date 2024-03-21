@@ -132,3 +132,11 @@ hr {
     width: 220px;
     border-radius: 20px;
 }
+
+@media (max-width: 660px) {
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

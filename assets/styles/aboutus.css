@@ -68,3 +68,12 @@
         background-color: #228B22; 
     }
 }
+
+@media (max-width: 660px) {
+    .progress-bars {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 30px;
+    }
+}
