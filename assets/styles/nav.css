@@ -160,3 +160,72 @@
         box-shadow: 0px 0px 15px #484846;
     }
 }
+
+@media (max-width: 660px) {
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-left: 4%;
+        padding-right: 2%;
+        font-family: 'luckiest guy';
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 1px;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger {
+        margin-right: 15px;
+        position: relative;
+        display: block;
+        width: 30px;
+        cursor: pointer;
+        height: 25px;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .hamburger .bar, .hamburger::after, .hamburger::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #FFC400;
+        margin: 3px 0px;
+        transition: 0.5s;
+    }
+
+    .hamburger.is-active::before {
+        transform: rotate(-45deg) translate(-4px, 6px);
+    }
+
+    .hamburger.is-active::after {
+        transform: rotate(45deg) translate(-2px, -5px);
+    }
+
+    .nav-link-mobile {
+        font-family: 'roboto';
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        text-align: center;
+        margin: 0 auto 16px;
+        color: #FFC400;
+        text-decoration: none;
+        padding: 8px 12px;
+        background-color: #FBFBFB;
+        font-size: 1rem;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px grey;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}
