@@ -11,13 +11,17 @@
     <link rel="stylesheet" href="../assets/styles/lastminute.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
     <link rel="stylesheet" href="../assets/styles/offersDetails.css">
+    <link rel="stylesheet" href="../assets/styles/opinions.css">
+    <link rel="stylesheet" href="../assets/styles/opinionDetails.css">
     <script src="../assets/javascript/date.js"></script>
     <script src="../assets/javascript/timecounter.js"></script>
     <script src="../assets/javascript/progress.js"></script>
     <script src="../assets/javascript/slider.js"></script>
     <script src="../assets/javascript/navbar.js"></script>
     <script src="../assets/javascript/hamburger.js"></script>
-    <script src="../assets/javascript/openOffers.js"></script>
+    <script src="../assets/javascript/openModals.js"></script>
+    <script src="../server/show_data.js"></script>
+    <script src="../assets/javascript/validation_opinion.js"></script>
     <title>Dreamtour</title>
   </head>
   <body>
@@ -212,8 +216,25 @@
                     </div>
                 </div>
             </section>
-            <!-- <section class="content opinions" data-box="opinions">
-            </section> -->
+            <section class="content opinions navcontent" data-box="opinions">          
+                    <h1>Sekcja opinii</h1>
+                    <button class="add-opinion" id="add-opinion">Dodaj Opinie</button>
+                    <div class="comment" id="comment"></div>                       
+            </section>
+            <section id="opinion-details" class="opinion-details">
+                <div class="modal-section2">
+                    <div class="opinion-add-section">
+                        <h2>Dodaj opinię</h2>
+                        <form id="opinionForm" method="post" action="../server/add_opinion.php" onsubmit="return validateForm()">
+                            <label for="Imię">Imię i Nazwisko:</label>
+                            <input type="text" id="user-name" name="user-name" required><br><br>
+                            <label for="Opinia">Opinia:</label><br>
+                            <textarea id="user-opinion" name="user-opinion" rows="10" cols="20" required></textarea><br><br>
+                            <input type="submit" class="button-send-opinion" value="Dodaj opinię">
+                        </form>
+                    </div>
+                </div>
+            </section>
             <footer class="navcontent" data-box="contact">
                 <div class="footer-grid">
                     <form class="contact" method="POST">         

@@ -149,3 +149,20 @@
         display: none;
     }
 }
+
+@media (min-width: 1500px) {
+    .image-slider {
+        height: 650px;
+        width: 96%;
+        position: relative;
+        overflow: hidden;
+        background-image: url('../images/zdjecie1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transition: 0.3s;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border-radius: 20px;
+    }
+}

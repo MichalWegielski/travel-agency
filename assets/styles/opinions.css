@@ -1,0 +1,126 @@
+.opinions h1 {
+    padding: 20px 30px;
+    margin-right: auto;
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: #FBFBFB;
+    background-color: rgba(0, 0, 0, 0.264);
+    letter-spacing: 2px;
+    box-shadow: 0px 0px 10px rgb(28, 26, 26);
+}
+
+.opinions .comment {
+    margin-right: auto;
+    margin-left: 50px;
+    
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 35px; 
+}
+
+.add-date {
+    font-style: italic;
+}
+
+.opinion {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.comment .opinion-separator {
+    border-top: 1px #ccc solid;
+    width: 100%;
+}
+
+.add-opinion {
+    margin-right: auto;
+    margin-left: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: #0b9809;
+    border: transparent;
+    border-radius: 10px;
+    color: #FBFBFB;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.add-opinion:hover {
+    background-color: #0b7509;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .opinion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opinions h1 {
+        padding: 20px 30px;
+        margin-right: auto;
+        margin-left: 30px;
+        font-size: 2rem;
+        font-weight: bold;
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        color: #FBFBFB;
+        background-color: rgba(0, 0, 0, 0.264);
+        letter-spacing: 2px;
+        box-shadow: 0px 0px 10px rgb(28, 26, 26);
+    }
+}
+
+@media (max-width: 750px) {
+    .opinions h1 {
+        padding: 20px 30px;
+        margin-right: auto;
+        margin-left: 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        color: #FBFBFB;
+        background-color: rgba(0, 0, 0, 0.264);
+        letter-spacing: 2px;
+        box-shadow: 0px 0px 10px rgb(28, 26, 26);
+    }
+}
+
+@media (max-width: 480px) {
+    .opinions h1 {
+        padding: 20px 30px;
+        margin-right: auto;
+        margin-left: 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        color: #FBFBFB;
+        background-color: rgba(0, 0, 0, 0.264);
+        letter-spacing: 2px;
+        box-shadow: 0px 0px 10px rgb(28, 26, 26);
+    }
+
+    .add-opinion {
+        margin-right: auto;
+        margin-left: 30px;
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        background-color: #0b9809;
+        border: transparent;
+        border-radius: 10px;
+        color: #FBFBFB;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+}

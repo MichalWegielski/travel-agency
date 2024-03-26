@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
             cardItems.forEach(cardItem => {
                 const cardDataBox = cardItem.getAttribute('data-box');
                 if (navDataBox === cardDataBox && navDataBox === 'home') {
-                    cardItem.scrollIntoView({behavior: 'smooth'});
+                    cardItem.scrollIntoView({ behavior: 'smooth' });
                     window.scrollBy(0, -9999);
                 } else if (navDataBox === cardDataBox) {
-                    cardItem.scrollIntoView({behavior: 'smooth'});
+                    cardItem.scrollIntoView({ behavior: 'smooth' });
                 }
             });
             navLinks.forEach(item => item.blur());
@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const navMobileDataBox = navLinkMobile.getAttribute('data-box');
             cardItems.forEach(cardItem => {
                 const cardDataBox = cardItem.getAttribute('data-box');
-                if (navMobileDataBox === cardDataBox && navMobileDataBox === 'home') {    
-                    cardItem.scrollIntoView({behavior: 'smooth'});
+                if (navMobileDataBox === cardDataBox && navMobileDataBox === 'home') {
+                    cardItem.scrollIntoView({ behavior: 'smooth' });
                     window.scrollBy(0, -9999);
                     navMobile.classList.remove('is-active');
                 } else if (navMobileDataBox === cardDataBox) {
-                    cardItem.scrollIntoView({behavior: 'smooth'});
+                    cardItem.scrollIntoView({ behavior: 'smooth' });
                     navMobile.classList.remove('is-active');
                 }
             });
