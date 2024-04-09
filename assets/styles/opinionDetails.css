@@ -38,9 +38,14 @@
     margin-left: 10px;
 }
 
+#optionForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .button-send-opinion{
-    margin-right: auto;
-    margin-left: 30px;
     width: 150px;
     height: 40px;
     font-size: 1rem;
@@ -49,7 +54,7 @@
     border-radius: 10px;
     color: #FBFBFB;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .button-send-opinion:hover {
@@ -68,4 +73,10 @@
         margin-top: 30%;
         margin-left:10%;
      }
+}
+
+@media (max-height: 670px) {
+    #user-opinion {
+        height: 100px;
+    }
 }
