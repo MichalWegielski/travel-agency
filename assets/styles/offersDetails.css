@@ -33,12 +33,12 @@
     margin-right: auto;
     margin-left: 5%;
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 .tour-informations {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -111,6 +111,28 @@
         justify-content: center;
         gap: 2rem;
     }
+
+    .booked-tour {
+        height: 60px;
+        width: 180px;
+        margin-top: 0;
+        margin-right: 10%;
+        margin-bottom: 5%;
+        border-radius: 20px;
+        background-color: #0b9809;
+        color: #FBFBFB;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        border: transparent;
+        outline: none;
+    }
+
+    .tour-informations {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
 @media (max-width: 610px) {
@@ -130,5 +152,14 @@
         padding: 10px;
         border-radius: 10px;
         border: 1px solid #ccc;
+    }
+}
+
+@media (max-height: 840px) {
+    .tour-sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
     }
 }
